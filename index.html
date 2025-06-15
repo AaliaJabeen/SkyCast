@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <div class="wrapper">
+
+        <h1>Weather App</h1>
+        <div class="tab-container">
+            <p class="tab" data-userWeather>Your weather</p>
+            <p class="tab" data-searchWeather>Search weather</p>
+        </div>
+
+        <div class="weather-container">
+            <!-- grant location container -->
+             <div class="sub-container grant-location-container">
+                <!-- image download kr k dalo -->
+                 <!--        -->
+                <img src="./assests/location.jpg" width="80" height="80" loading="lazy">
+                <p>Grant location Access</p>
+                <p>Allow access to get weather Information</p>
+                <button class="btn" data-grantAccess>Grant Access</button>
+            </div>    
+                <!-- search form ->form container -->
+                 <form class="form-container" data-searchForm>
+                    <input placeholder="Search for city..." data-searchInput>
+                    <!-- put srach image -->
+                     <!--           -->
+                    <button class="btn" type="submit">
+                         <img src="./assests/search-logo.jpg" width="20" height="20" loading="lazy">
+                        </button>
+                 </form>
+                 <!-- loading screen container -->
+                  <div class="sub-container loading-container">
+                    <!-- put loading gif here -->
+                     <!--       -->
+                    <img src="./assests/loading_gif.gif" widht="80" height="80">
+                    <p>loading</p>
+                  </div>
+                  <!-- show weather information -->
+                   <div class="sub-container user-info-container">
+
+                    <!-- city name and flag -->
+                    <div class="name">
+                        <p data-cityName></p>
+                        <img data-countryIcon>
+                    </div>
+                    <!-- weather description -->
+                    <p data-weatherDesc></p>
+                    <!-- weather icon -->
+                    <img data-weatherIcon>
+                    <!-- temprature -->
+                    <p data-temp></p>
+                    <!-- 3 card- parmeter -->
+                    <div class="parameter-container">
+                        <!-- card 1 -->
+                        <div class="parameter">
+                            <!-- wind icon dalo -->
+                             <!--  -->
+                            <img src="./assests/wind.jpg" width="110" height="110">
+                            <p>windspeed</p>
+                            <p data-windspeed></p>
+                         </div>
+                        <!-- card 2 -->
+                         <div class="parameter">
+                            <!-- humidity image dalo -->
+                            <img src="./assests/humidity.jpg" width="60" height="60" >
+                            <p>humidity</p>
+                            <p data-humidity></p>
+                         </div>
+                         <!-- card 3 -->
+                          <div class="parameter">
+                            <!-- cloud ka picture dalo -->
+                            <img src="./assests/clooud.jpg" width="70" height="70">
+                            <p>Cloud</p>
+                            <p data-cloudiness></p>
+                          </div>
+                    </div>
+
+                   </div>
+
+
+             </div>
+       
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
